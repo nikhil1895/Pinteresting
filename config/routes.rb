@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#home' #creates a root path
   get "about" => "pages#about" #creates a about_path
   get "writer" => "pages#Writer"  #should create a writer_path
